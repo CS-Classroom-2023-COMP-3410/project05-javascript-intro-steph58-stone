@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualization Tool</title>
+    <link rel="stylesheet" href="styles09.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Visualization Tool</h1>
+        <div class="controls">
+            <!-- Algorithm Selection -->
+            <label for="algorithm">Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+
+            <!-- Speed Slider -->
+            <label for="speed">Speed:</label>
+            <input type="range" id="speed" min="1" max="100" value="50">
+
+            <!-- Buttons -->
+            <button id="generate">Generate New Array</button>
+            <button id="sort">Start Sorting</button>
+        </div>
+
+        <!-- Array Container -->
+        <div class="array-container"></div>
+
+        <!-- Commentary -->
+        <p id="commentary">Click "Generate New Array" to start.</p>
+    </div>
+    <script src="js/script09.js"></script>
+</body>
+</html>
